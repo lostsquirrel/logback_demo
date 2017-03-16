@@ -10,6 +10,7 @@
 	<appender name="stash" class="net.logstash.logback.appender.LogstashSocketAppender">
 		<host>192.168.1.139</host>
 		<port>9999</port>
+		<customFields>{"appname":"statistics_dev", "host": "192.168.1.125"}</customFields>
 	</appender>
 	
 	<root level="WARN">

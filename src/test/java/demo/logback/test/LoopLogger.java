@@ -23,7 +23,9 @@ public class LoopLogger {
 			
 			@Override
 			public void run() {
-				log.error("gen: {}", random.nextInt());
+				for (int x = 0; x < 1 + random.nextInt(20); x++) {
+					log.error("gen: {}", random.nextInt());
+				}
 			}
 			
 		}, 100, 1000);
